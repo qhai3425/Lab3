@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Bai 3</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="myStyle.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <img src="./images/logo-energy-pilates.png" alt="" class="logo" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list-task" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z" />
+                                <path
+                                    d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z" />
+                            </svg>
+                            Bài viết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-film" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z" />
+                            </svg>
+                            Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
+                            Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                            </svg>
+
+                            Sự kiện</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Đăng kí thành viên</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item text-black m-1">
+                        <a class="nav-link fw-medium text-black" href="#">Tiếng Việt</a>
+                    </li>
+
+                    <li class="nav-item text-black m-1">
+                        <a class="nav-link fw-medium text-black" href="#">Tiếng Anh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container ">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner1.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner2.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 ">
+                <h3 class="m-2"     >Chuyên mục</h3>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center"
+                        id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab"
+                        aria-controls="list-home">Chế độ tập<span
+                            class="badge text-bg-primary rounded-pill">12</span></a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                        id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab"
+                        aria-controls="list-profile">Chế độ dinh dưỡng<span
+                            class="badge text-bg-primary rounded-pill">15</span></a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                        id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab"
+                        aria-controls="list-messages">Cẩm nang cuộc sống<span
+                            class="badge text-bg-primary rounded-pill">99</span></a>
+                </div>
+
+
+                <!--Bài viết nổi bật  -->
+                <ul class="list-group">
+                    <div class="card mb-4 mt-3">
+                        <div class=" text-dark text-start list-group-item ">
+                            <h4 class="card-title" style="color: var(--bs-info)">Bài viết nổi bật
+                                </h6>
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex flex-row align-items-center ">
+                                <img src="images/spinach_300x300.jpg" class="rounded-circle me-3" alt="Orange Benefits"
+                                    style="width: 80px; height: 80px;">
+                                <div class="card-body">
+                                    <h6 class="card-title">Lợi ích khi ăn rau mỗi ngày</h6>
+                                    <p class="card-body">Tiêu thụ rau xanh hằng ngày sẽ giúp tăng cường thị lực, kiểm
+                                        soát cân nặng, ngăn ngừa các bệnh…</p>
+
+                                </div>
+                            </div>
+                            <div class=" d-flex flex-row align-items-center">
+                                <img src="images/orange_300x300.jpg" class="rounded-circle me-3" alt="Cam Benefits"
+                                    style="width: 80px; height: 80px;">
+                                <div class="card-body">
+                                    <h6 class="card-title">9 tác dụng tuyệt vời của quả cam</h6>
+                                    <p class="card-body">Cam tự hào về khả năng chống lão hóa mạnh mẽ nhờ hàm lượng chất
+                                        chống oxy hóa cao…</p>
+                                </div>
+                            </div>
+                            <div class=" d-flex flex-row align-items-center">
+                                <img src="images/sesameoil_300x300.jpg" class="rounded-circle me-3"
+                                    alt="Coconut Oil Benefits" style="width: 80px; height: 80px;">
+                                <div class="card-body">
+                                    <h6 class="card-title">10 công dụng bất ngờ từ dầu dừa</h6>
+                                    <p class="card-body ">Dầu dừa như một loại kem dưỡng ẩm tự nhiên cho cơ thể, giúp
+                                        việc sản xuất collagen trong các tế bào…</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="col-md-8" style="color: var(--bs-info)">
+                <h3>TẤT CẢ BÀI VIẾT</h3>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <!-- card 1 -->
+                        <div class="card text-center">
+                            <div class="card-header fs-5 text-start">
+                                Phương pháp tập Pilates giúp phục hồi chấn thương cột sống
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                    class="bi bi-chat-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                </svg>
+                                16
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/tap-piltes.jpg" alt="" class="w-100" />
+                                <p class="card-text text-start">
+                                    Ngoài việc giúp duy trì vóc dáng, cải thiện sự linh hoạt,
+                                    dẻo dai cho người tập, Pilates giúp cơ bắp và các khớp mọc
+                                    dài hơn, kéo giãn hơn...
+                                </p>
+                            </div>
+                        </div><br>
+
+                        <!-- card 3 -->
+                        <div class="card text-center">
+                            <div class="card-header fs-5 text-start">
+                                Tập Pilates có thể cải thiện sức khỏe tim mạch của bạn
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                    class="bi bi-chat-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                </svg>
+                                5
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/tim-mach.jpg" alt="" class="w-100" />
+                                <p class="card-text text-start">
+                                    Tập Pilates không chỉ giúp bạn có một cơ thể khỏe mạnh và linh hoạt mà
+                                    còn có nhiều lợi ích cho sức khỏe tim mạch.
+                                    Bài viết này sẽ tìm hiểu sâu hơn về tác động tích cực của việc tập
+                                    Pilates đối với sức khỏe tim mạch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- card 2 -->
+                        <div class="card text-center">
+                            <div class="card-header fs-5 text-start">
+                                Đây là những gì 1 giờ tập Pilates có thể làm cho cơ thể của bạn
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                    class="bi bi-chat-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                </svg>
+                                8
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/tap-pilates1.jpg" alt="" class="w-100" />
+                                <p class="card-text text-start">
+                                    Được thiết kế để xây dựng cơ bắp săn chắc, khỏe mạnh hơn,
+                                    bài tập này đã trở thành một cái tên quen thuộc nhờ có rất nhiều người
+                                    nổi tiếng theo dõi.
+                                </p>
+                            </div>
+                        </div><br>
+
+                        <!-- card 4 -->
+                        <div class="card text-center">
+                            <div class="card-header fs-5 text-start">
+                                EAT CLEAN: Nên Và Không Nên Ăn Thực Phẩm Nào?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                    class="bi bi-chat-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                </svg>
+                                3
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/eat-clean.png" alt="" class="w-100" />
+                                <p class="card-text text-start">
+                                    Chúng ta luôn chú trọng lựa chọn thực phẩm sạch và duy trì lối sống
+                                    lành mạnh. Vậy ché độ ăn Eat Clean nên và không nên ăn gì trong thực đơn
+                                    hàng ngày để cân bằng thành phần dinh dưỡng cho cơ thể?
+                                </p>
+                            </div><br>
+                        </div><br>
+                    </div>
+                    <nav aria-label="Page navigation example center">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        ©Copyright by FPT Polytechnic
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
